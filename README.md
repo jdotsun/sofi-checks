@@ -22,4 +22,4 @@ checkstyleConfigLocation :=
 
 ## Questions
 
-Field questions and complatins to Bridger Howell (bhowell@sofi.org).
+Field questions and complaints to Bridger Howell (bhowell@sofi.org).
