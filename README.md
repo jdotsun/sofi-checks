@@ -1,4 +1,4 @@
-# SoFi Checks
+ls# SoFi Checks
 
 This repository is a place to put config files related to code and programming style checks.
 
@@ -6,7 +6,7 @@ Currently this supports both Java and Scala configurations, but it could conceiv
 
 ### Java ###
 
-This includes ide (both IntelliJ and Eclipse) and checkstyle configs for java (see [the checkstyle documentation](http://checkstyle.sourceforge.net/)).
+This includes IDE (both IntelliJ and Eclipse) and checkstyle configs for java (see [the checkstyle documentation](http://checkstyle.sourceforge.net/)).
 
 ### Scala ###
 
@@ -51,11 +51,10 @@ And the configuration goes in the build.sbt
 
 You can configure the plugin to run automatically as part of the compile process by adding to build.sbt
 ```
-
 scalastyleFailOnError := true
 lazy val compileScalastyle = taskKey[Unit]("compileScalastyle")
 compileScalastyle := scalastyle.in(Compile).toTask("").value
-(compile in Compile) := ((compile in Compile) dependsOn compileScalastyle).value
+(compile in Compile) := (compile in Compile dependsOn compileScalastyle).value
 ```
 ## Questions
 
