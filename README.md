@@ -27,7 +27,7 @@ dependencyOverrides += "com.puppycrawl.tools" % "checkstyle" % "7.7"
 Then to use a particular config reference it's URL in your config location:
 ```
 checkstyleConfigLocation :=
-  CheckStyleConfigLocation.URL("https://raw.githubusercontent.com/SocialFinance/sofi-checks/master/checks/checkstyle-config.xml")
+  CheckStyleConfigLocation.URL("https://raw.githubusercontent.com/SocialFinance/sofi-checks/master/checks/java/checkstyle-config.xml")
 ```
 To have checkstyle run as part of the compile and fail on style errors add the following to the build.sbt
 ```
