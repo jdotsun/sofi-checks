@@ -1,4 +1,4 @@
-ls# SoFi Checks
+# SoFi Checks
 
 This repository is a place to put config files related to code and programming style checks.
 
