@@ -179,9 +179,9 @@
     <module name="OverloadMethodsDeclarationOrder"/>
     <module name="VariableDeclarationUsageDistance"/>
     <module name="CustomImportOrder">
+      <property name="specialImportsRegExp" value="com\.sofi"/>
       <property name="sortImportsInGroupAlphabetically" value="true"/>
-      <property name="separateLineBetweenGroups" value="true"/>
-      <property name="customImportOrderRules" value="STATIC###THIRD_PARTY_PACKAGE"/>
+      <property name="customImportOrderRules" value="STATIC###SPECIAL_IMPORTS###THIRD_PARTY_PACKAGE###STANDARD_JAVA_PACKAGE"/>
     </module>
     <module name="MethodParamPad"/>
     <module name="NoWhitespaceBefore">
@@ -190,7 +190,7 @@
     </module>
     <module name="ParenPad"/>
     <module name="OperatorWrap">
-      <property name="option" value="NL"/>
+      <property name="option" value="EOL"/>
       <property name="tokens" value="BAND, BOR, BSR, BXOR, DIV, EQUAL, GE, GT, LAND, LE, LITERAL_INSTANCEOF, LOR, LT, MINUS, MOD, NOT_EQUAL, QUESTION, SL, SR, METHOD_REF "/>
     </module>
     <module name="AnnotationLocation">
