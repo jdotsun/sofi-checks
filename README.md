@@ -52,9 +52,7 @@ And the configuration goes in the build.sbt
 You can configure the plugin to run automatically as part of the compile process by adding to build.sbt
 ```
 scalastyleFailOnError := true
-lazy val compileScalastyle = taskKey[Unit]("compileScalastyle")
-compileScalastyle := scalastyle.in(Compile).toTask("").value
-(compile in Compile) := (compile in Compile dependsOn compileScalastyle).value
+compile in Compile := ((compile in Compile) dependsOn (scalastyle in Compile).toTask("")).value
 ```
 
 ## Ide-Style
